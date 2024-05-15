@@ -1,0 +1,29 @@
+.products {
+    padding: 30px 0;
+    &__carts {
+        width: 100%;
+        &__head {
+            color: #fff;
+            padding: 10px 0;
+            th {
+                padding: 10px 20px;
+                background: #363740;
+            }
+        }
+    }
+    &__cart {
+        &__brand {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 15px;
+        }
+        &__img {
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+        }
+    }
+}

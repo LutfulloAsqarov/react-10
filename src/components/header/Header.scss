@@ -1,0 +1,50 @@
+#header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 40px 0 20px;
+    background: #fff;
+    width: 100%;
+}
+
+.header {
+    &__bar {
+        font-size: 26px;
+        cursor: pointer;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            img {
+                border-radius: 50%;
+            }
+        }
+    }
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0 5px;
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &__dots {
+        padding: 10px 20px;
+        background: #eef2f5;
+        border-radius: 5px;
+    }
+    &__add {
+        padding: 10px 20px;
+        background: #10cd45;
+        border-radius: 5px;
+        color: #fff;
+    }
+}
