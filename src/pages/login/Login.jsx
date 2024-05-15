@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import axios from "../../api";
 import React, { useState } from "react";
+import { toast } from "react-toastify";
+import "./Login.scss";
 
 const Login = () => {
     let navigate = useNavigate();
@@ -18,13 +20,15 @@ const Login = () => {
                 localStorage.setItem("x-auth-token", res.data.token);
                 navigate("/admin/products");
             })
-            .catch((err) => console.log(err));
+            .catch((err) => {
+                toast.error("Username or password invalid");
+            });
     };
 
     return (
         <div className="login">
-            <h2>Login</h2>
             <form onSubmit={handleLogin} action="">
+                <h2>Login</h2>
                 <input
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
@@ -37,7 +41,7 @@ const Login = () => {
                     type="password"
                     name=""
                 />
-                <button>log in</button>
+                <button>Log in</button>
             </form>
         </div>
     );

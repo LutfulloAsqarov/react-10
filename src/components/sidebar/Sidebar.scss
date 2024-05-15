@@ -53,5 +53,9 @@
         color: #a4a6b3;
         gap: 16px;
         font-size: 18px;
+        transition: 0.3s;
+        &:hover {
+            color: red;
+        }
     }
 }

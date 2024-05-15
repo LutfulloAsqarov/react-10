@@ -1,0 +1,37 @@
+.login {
+    background: #363740;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    color: #fff;
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 30%;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px gray;
+        input {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+        button {
+            background: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: 0.3s;
+            &:hover {
+                background: #fff;
+                color: #000;
+            }
+        }
+    }
+}

@@ -6,7 +6,8 @@ import Users from "./pages/admin/users/Users";
 import Posts from "./pages/admin/posts/Posts";
 import Auth from "./pages/auth/Auth";
 import Login from "./pages/login/Login";
-import Header from "./components/header/Header";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                     </Route>
                 </Route>
             </Routes>
+            <ToastContainer />
         </>
     );
 }

@@ -8,9 +8,7 @@ const Admin = () => {
     return (
         <div className="admin">
             <Sidebar />
-            <div>
-                <Outlet />
-            </div>
+            <Outlet />
         </div>
     );
 };
